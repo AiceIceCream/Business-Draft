@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Sumana:wght@700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+}
+
+.Container{
+    width: 100%;
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(240, 222, 173) , rgb(175, 245, 218));
+    text-align: center;
+    
+}
+
+.logo{
+  width: 13%;
+  filter: brightness(0);
+}
+
+nav{
+  display: flex;
+  width: 92.5%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  border-style: groove;
+  border-width: 2px;
+  border-color: rgb(156, 184, 184);
+  transition: 0.5s;
+}
+
+nav ul li:hover{
+  background-color: rgb(107, 177, 154);
+  transform: scale(1.2);
+}
+
+nav ul li a:hover{
+  color: antiquewhite;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 100%;
+  font-family: Tahoma;
+}
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 5.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .btn {
+    position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+    margin-right: 5%;
+    
+  
+    
+   }
+   
+   .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .btn::after {
+    background-color: #fff;
+   }
+   
+   .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+  /* Foods */
+
+   .product1 {
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    top: 295px;
+    left: 350px;
+  }
+
+  .product1 img{
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .product1 h5 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  /* Beverages */
+
+  .product2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    top: 270px;
+    left: 440px;
+  }
+  
+  .product2 img {
+    width: 30%;
+    max-width: 400px;
+    height: 30%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .product2 h5 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Devices */
+
+  .product3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    top: 255px;
+    left: 675px;
+  }
+  
+  .product3 img {
+    width: 30%;
+    max-width: 400px;
+    height: 30%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .product3 h5 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Furniture */
+  .product4 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    top: 250px;
+    left: 900px;
+  }
+  
+  .product4 img {
+    width: 30%;
+    max-width: 400px;
+    height: 30%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .product4 h5 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  /* Appliances */
+
+  .product5 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    top: 280px;
+    left: 1160px;
+  }
+  
+  .product5 img {
+    width: 30%;
+    max-width: 400px;
+    height: 30%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+
+  .product5 h5 {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .foot{
+    position: absolute;
+    bottom: 0px;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 50%;
+    background-color: rgb(31, 17, 0);
+  }
+
+  .Social{
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    right: 45%;
+  }
+  
+  .Social a:hover{
+    opacity: 50%;
+  }
+  
+  .Social p{
+    font-family: serif;
+    padding-top: 3px;
+    color: #ffffff;
+  }
+  
