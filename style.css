@@ -74,7 +74,7 @@ nav ul li a{
 .HomePage h1{
     position: absolute;
     top: 350px;
-    right: 91px;
+    right: 121px;
     font-size: 65px;
     color: transparent;
     text-align: end;
@@ -85,7 +85,7 @@ nav ul li a{
 .Icons {
     position: absolute;
     font-family: serif;
-    left: 93px;
+    left: 140px;
     top: 350px;
 }
 
